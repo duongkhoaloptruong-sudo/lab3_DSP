@@ -1,0 +1,4 @@
+* source EX5
+R_R1         0 N00114  3.9k TC=0,0 
+V_V1         N00107 0 24Vdc
+R_R2         N00114 N00107  15k TC=0,0 

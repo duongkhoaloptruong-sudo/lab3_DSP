@@ -1,0 +1,91 @@
+
+**** 10/28/26 14:30:17 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-simulation"  [ c:\users\bahuy\appdata\local\temp\zalo temp\ccb36ce57981e117a3d60a27689d9425~\ex7\ex7-pspicef
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "simulation.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source EX7
+R_R1         N000361 N00167  3k TC=0,0 
+R_R2         N000521 N00167  2k TC=0,0 
+R_R3         0 N000521  4k TC=0,0 
+R_R4         0 N000361  9k TC=0,0 
+R_R5         N00235 N00167  6k TC=0,0 
+V_V1         N00235 0 12Vdc
+
+**** RESUMING simulation.cir ****
+.END
+
+**** 10/28/26 14:30:17 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-simulation"  [ c:\users\bahuy\appdata\local\temp\zalo temp\ccb36ce57981e117a3d60a27689d9425~\ex7\ex7-pspicef
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00167)    4.8000 (N00235)   12.0000 (N000361)    3.6000                       
+
+(N000521)    3.2000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.200E-03
+
+    TOTAL POWER DISSIPATION   1.44E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/28/26 14:30:17 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-simulation"  [ c:\users\bahuy\appdata\local\temp\zalo temp\ccb36ce57981e117a3d60a27689d9425~\ex7\ex7-pspicef
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .67
+

@@ -1,0 +1,286 @@
+
+**** 10/27/26 16:12:13 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "zener-waveform"  [ c:\cds_spb_home\cdssetup\projects\ex10\ex10-PSpiceFiles\zener\waveform.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "waveform.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../ex10-PSpiceFiles/PSpiceModelApps/PSpiceModelApps_Include.lib" 
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 1ms 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.OPTIONS ABSTOL= 0.001
+.OPTIONS CHGTOL= 0.001
+.OPTIONS GMIN= 1.0E-9
+.OPTIONS VNTOL= 0.001
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\zener.net" 
+
+
+
+**** INCLUDING zener.net ****
+* source EX10
+V_V9         N07371 0  AC 1
++SIN 0 220 50 0 0 0
+X_U1         N07429 N07511 N074471 0 0 LM2596_5P0_TRANS
+X_D15         0 N07511 Zener_parameterized PARAMS: VZT=5 RSF=100m
+D_D11         0 N07317 Dbreak 
+C_C2         0 N07511  220uF  TC=0,0 
+R_R1         0 N07511  1k TC=0,0 
+C_C1         0 N07429  680uF  TC=0,0 
+L_L1         N074471 N07511  33uH  
+D_D13         0 0 Dbreak 
+D_D14         0 N07429 Dbreak 
+X1_TX1         N07371 0  N07317 0 ST_Model
+D_D12         N07317 N07429 Dbreak 
+
+**** RESUMING waveform.cir ****
+.END
+
+**** 10/27/26 16:12:13 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "zener-waveform"  [ c:\cds_spb_home\cdssetup\projects\ex10\ex10-PSpiceFiles\zener\waveform.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.X_U2_U20.dd1 
+          IS    1.000000E-15 
+           N     .1          
+          RS     .05         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U2_U21.dd1 
+          IS    1.000000E-15 
+           N     .1          
+          RS     .05         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U2_U22.dd1 
+          IS    1.000000E-15 
+           N     .1          
+          RS     .05         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U20.dd1 
+          IS    1.000000E-15 
+           N     .1          
+          RS     .05         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U17.dd1 
+          IS    1.000000E-15 
+           N     .1          
+          RS     .05         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U18.dd1 
+          IS    1.000000E-15 
+           N     .1          
+          RS     .05         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U19.dd1 
+          IS    1.000000E-15 
+           N     .1          
+          RS     .05         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U21.d_d1 
+          IS    1.000000E-15 
+           N     .1          
+          RS     .05         
+          TT   10.000000E-12 
+
+
+**** 10/27/26 16:12:13 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "zener-waveform"  [ c:\cds_spb_home\cdssetup\projects\ex10\ex10-PSpiceFiles\zener\waveform.sim ] 
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.X_U2_S1._U2_S1 
+         RON    1.000000E-06 
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+               X_U1.X_U1_S1._U1_S1 
+         RON     .125        
+        ROFF    1.000000E+06 
+         VON     .8          
+        VOFF     .2          
+
+
+               X_U1.X_U1_S4._U1_S4 
+         RON   10.000000E-06 
+        ROFF    1.000000E+06 
+         VON     .8          
+        VOFF     .2          
+
+
+               X_U1.X_U1_S3._U1_S3 
+         RON    1.000000E-03 
+        ROFF   10.000000E+06 
+         VON     .2          
+        VOFF     .8          
+
+
+**** 10/27/26 16:12:13 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "zener-waveform"  [ c:\cds_spb_home\cdssetup\projects\ex10\ex10-PSpiceFiles\zener\waveform.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N07317) 39.93E-18 (N07371)    0.0000 (N07429) 3.992E-06 (N07511) 4.004E-06     
+
+(N074471) 4.004E-06                   (X_D15.1)   -4.5047                       
+
+(X_D15.3)    4.5047                   (X_D15.9)-12.41E-12                       
+
+(X1_TX1.PI)    0.0000                 (X1_TX1.SI)    0.0000                     
+
+(X1_TX1.SI1)    0.0000                (X_U1.U1_QB)    1.0000                    
+
+(X_U1.FB_INT) 988.1E-09               (X_U1.U1_CLK)-3.248E-15                   
+
+(X_U1.U1_VIN) 3.992E-06               (X_U1.U1_RAMP)     .0020                  
+
+(X_U1.U1_VREF)    0.0000              (X_U1.U1_VREG) 3.989E-09                  
+
+(X_U1.U1_IN_EN)    1.0000             (X_U1.N16780142)    0.0000                
+
+(X_U1.N16780145)    0.0000            (X_U1.N16780152)    0.0000                
+
+(X_U1.N16780168) 3.992E-06            (X_U1.U1_N16912605) 988.1E-09             
+
+(X_U1.U1_N16912628)    1.2500         (X_U1.U1_N16912717)    0.0000             
+
+(X_U1.U1_N16912781)    0.0000         (X_U1.U1_N16912860)    0.0000             
+
+(X_U1.U1_N16912864)    0.0000         (X_U1.U1_N16912941)    2.4000             
+
+(X_U1.U1_N16913023)     .6000         (X_U1.U1_N16913047)    0.0000             
+
+(X_U1.U1_N16913100)    1.0000         (X_U1.U1_N16913159)    0.0000             
+
+(X_U1.U1_N16913162) 3.992E-06         (X_U1.U1_N16913254)     .7500             
+
+(X_U1.U2_N16797288) 3.992E-06         (X_U1.U2_N16797354)-53.25E-15             
+
+(X_U1.U2_N16797356)    0.0000         (X_U1.U2_N16797358) 3.992E-06             
+
+(X_U1.U2_N16797432)    -.2200         (X_U1.U2_N16797445)    -.2000             
+
+(X_U1.U2_N16797477)    0.0000         (X_U1.U2_N16797480)    0.0000             
+
+(X_U1.U2_N16797484)-53.25E-15         (X_U1.U2_N16797488)    0.0000             
+
+(X_U1.U2_N16797592)     .0020         (X_U1.U2_N16797620)    0.0000             
+
+(X_U1.U2_N16797700)    2.0000         (X_U1.X_U1_U21.my5)    1.0000             
+
+(X_U1.X_U1_U21.qbr)    1.0000         (X_U1.X_U1_U21.qqq)    -.0100             
+
+(X_U1.X_U1_U8.Yint)    1.0000         (X_U1.X_U2_U8.Yint)    0.0000             
+
+(X_U1.X_U2_U9.Yint)    0.0000         (X_U1.U1_N169126890) 539.9E-21            
+
+(X_U1.U1_N169128072)    0.0000        (X_U1.U1_N169131443)    1.0000            
+
+(X_U1.U2_N167976151)    0.0000        (X_U1.X_U1_U12.Yint)    1.0000            
+
+(X_U1.X_U1_U15.YINT)    1.0000        (X_U1.X_U1_U16.Yint)    0.0000            
+
+(X_U1.X_U1_U21.qint)    -.0100        (X_U1.X_U1_U21.myvss)    0.0000           
+
+(X_U1.X_U1_U21.qqqd1)    0.0000       (X_U1.U1_ERROR_AMP_OUT) 4.049E-12         
+
+(X_U1.X_U1_U21.x3.YINT)    0.0000     
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V9         0.000E+00
+    X_U1.V_U2_V3  -1.998E-09
+    X_U1.V_U2_V2   0.000E+00
+    X_U1.V_U2_V1   0.000E+00
+    X_U1.V_U1_VCL   3.491E-17
+    X_U1.V_U1_VCH  -2.400E-09
+    X_U1.V_U1_V_EN4   0.000E+00
+    X_U1.V_U1_V1  -7.480E-07
+    X_U1.V_U1_V3   0.000E+00
+    X_U1.X_U1_U21.v1  -1.010E-09
+    X_U1.X_U1_U21.v2  -1.005E-11
+
+    TOTAL POWER DISSIPATION   5.72E-07  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/27/26 16:12:13 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "zener-waveform"  [ c:\cds_spb_home\cdssetup\projects\ex10\ex10-PSpiceFiles\zener\waveform.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =       47.47
+

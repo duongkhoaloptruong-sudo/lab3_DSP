@@ -1,0 +1,111 @@
+
+**** 10/02/26 11:38:36 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC7-rectifiler"  [ C:\cds_spb_home\cdssetup\projects\DIODE\DIODE-PSpiceFiles\SCHEMATIC7\rectifiler.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "rectifiler.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../diode-PSpiceFiles/PSpiceModelApps/PSpiceModelApps_Include.lib" 
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0.1ms 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC7.net" 
+
+
+
+**** INCLUDING SCHEMATIC7.net ****
+* source DIODE
+R_R14         0 N06405  1k TC=0,0 
+C_C1         0 N06405  680uf  TC=0,0 
+D_D17         N06335 N06405 Dbreak 
+X1_TX2         N06427 0  N06335 N06623 ST_Model
+V_V11         N06427 0  AC 1
++SIN 0 220 50 0 0 0
+D_D18         0 N06623 Dbreak 
+D_D19         N06623 N06405 Dbreak 
+D_D16         0 N06335 Dbreak 
+
+**** RESUMING rectifiler.cir ****
+.END
+
+ERROR(ORPSIM-15413): Transient Stop time 1e-06 s is less than Print Start time 0.0001 s.
+
+
+ABORTING SIMULATION
+**** 10/02/26 11:38:36 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC7-rectifiler"  [ C:\cds_spb_home\cdssetup\projects\DIODE\DIODE-PSpiceFiles\SCHEMATIC7\rectifiler.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+Node counts:
+  Top level (NUNODS)                =           5
+  External (NCNODS)                 =           8
+  Total (NUMNOD)                    =          12
+
+Total device count (NUMEL)          =          18
+  Capacitors (C)                    =           1
+  Diodes (D)                        =           4
+  Couplings (K)                     =           2
+  Inductors (L)                     =           3
+  Resistors (R)                     =           4
+  Voltage Sources (V)               =           1
+
+Number of subcircuits (X)           =           1
+
+Matrix statistics:
+  Matrix size (NSTOP)               =          16
+  Initial no. elements (NTTAR)      =          44
+  No. elements w/ fillin (NTTBR)    =          44
+  No. fillins (IFILL)               =           0
+  No. overflows (NTTOV)             =           0
+  No. LU operations (IOPS)          =           0
+  Percent sparsity (PERSPA)         =      82.813
+
+Analysis statistics:
+  No. total time points (NUMTTP)    =           0
+  No. rejected time points (NUMRTP) =           0
+  No. iterations (NUMNIT)           =           0
+
+Load Threads                        =           1
+
+Runtime statistics:                       Seconds      Iterations
+  Matrix load                       =        0.00
+  Matrix solution                   =        0.00               1
+  Readin                            =         .31
+  General setup                     =        2.75
+  CMI setup                     =        0.00
+  Setup                             =        0.00
+  DC sweep                          =        0.00               0
+  Bias point                        =        0.00               0
+  AC and noise                      =        0.00               0
+  Total transient analysis          =        0.00
+  Output                            =        0.00
+  Overhead                          =         .03
+  Total job time (using Solver 1)   =        3.73
+

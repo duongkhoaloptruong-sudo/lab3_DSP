@@ -1,0 +1,11 @@
+* source EX8
+V_V1         N00168 0 30Vdc
+V_V4         N00175 N00196 8Vdc
+R_R2         N00555 N00175  1 TC=0,0 
+R_R3         0 N00175  1.429 TC=0,0 
+X_F1    N00555 N00168 N00196 0 SCHEMATIC1_F1 
+
+.subckt SCHEMATIC1_F1 1 2 3 4  
+F_F1         3 4 VF_F1 0.4
+VF_F1         1 2 0V
+.ends SCHEMATIC1_F1

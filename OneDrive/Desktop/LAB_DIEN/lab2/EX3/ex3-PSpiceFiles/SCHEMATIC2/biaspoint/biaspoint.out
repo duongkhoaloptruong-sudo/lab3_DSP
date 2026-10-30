@@ -1,0 +1,89 @@
+
+**** 10/29/26 14:58:26 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC2-biaspoint"  [ c:\users\bahuy\onedrive\desktop\lab_dien\lab2\ex3\ex3-PSpiceFiles\SCHEMATIC2\biaspoint.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "biaspoint.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC2.net" 
+
+
+
+**** INCLUDING SCHEMATIC2.net ****
+* source EX3
+D_D5         N01596 N01658 Dbreak 
+V_V3         N01592 0 12vdc
+R_R5         N01592 N01658  4k TC=0,0 
+R_R6         N01658 0  6k TC=0,0 
+R_R3         N01592 N01596  2k TC=0,0 
+R_R4         N01596 0  8k TC=0,0 
+
+**** RESUMING biaspoint.cir ****
+.END
+
+**** 10/29/26 14:58:26 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC2-biaspoint"  [ c:\users\bahuy\onedrive\desktop\lab_dien\lab2\ex3\ex3-PSpiceFiles\SCHEMATIC2\biaspoint.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01592)   12.0000 (N01596)    8.8936 (N01658)    8.2596 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -2.488E-03
+
+    TOTAL POWER DISSIPATION   2.99E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/29/26 14:58:26 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC2-biaspoint"  [ c:\users\bahuy\onedrive\desktop\lab_dien\lab2\ex3\ex3-PSpiceFiles\SCHEMATIC2\biaspoint.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        3.80
+

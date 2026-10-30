@@ -1,0 +1,6 @@
+* source EX4
+R_R7         N01899 N01821  3.3k TC=0,0 
+V_V4         N01809 0 12Vdc
+D_D6         N01809 N01821 Dbreak 
+D_D7         N01821 N01899 Dbreak 
+R_R8         0 N01899  5.6k TC=0,0 

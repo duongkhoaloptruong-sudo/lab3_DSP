@@ -1,0 +1,3 @@
+ lib=C:\Users\bahuy\OneDrive\Desktop\diode-PSpiceFiles\PSpiceModelApps\PSpiceModelApps_Include.lib, offset=46, size=243
+ lib=C:\cds_spb_home\cdssetup\pspTILibDir\drv834x.lib, offset=218494, size=328
+ lib=C:\Cadence\PSpiceTI\tools\PSpice\Library\breakout.lib, offset=33850, size=7379

@@ -1,0 +1,6 @@
+* source EX4
+D_D6         N01525 N01537 Dbreak 
+R_R8         0 N01615  5.6k TC=0,0 
+D_D7         N01537 N01615 Dbreak 
+V_V4         N01525 0 20Vdc
+R_R7         N01615 N01537  3.3k TC=0,0 

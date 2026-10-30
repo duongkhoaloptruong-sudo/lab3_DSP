@@ -1,0 +1,79 @@
+(ExpressProject "ex1"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "23.1-2024 S001-[10/27/26]")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    ("Allegro Netlist Directory" "allegro")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (NoModify)
+    (File ".\ex1.DSN"
+      (Type "Schematic Design")
+      (DisplayName ".\ex1.DSN"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Layout")
+  (Folder "Outputs"
+    (File ".\ex1-PSpiceFiles\SCHEMATIC1\SCHEMATIC1.net"
+      (Type "Report")
+      (DisplayName ".\ex1-PSpiceFiles\SCHEMATIC1\SCHEMATIC1.net")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\ex1-pspicefiles\schematic1\bias_point.sim"
+        (DisplayName "SCHEMATIC1-BIAS_POINT")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\ex1-pspicefiles\schematic1\dc-sweep.sim"
+        (DisplayName "SCHEMATIC1-DC-SWEEP")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\ex1-pspicefiles\schematic1\dc-sweep_2.sim"
+        (DisplayName "SCHEMATIC1-DC-SWEEP_2")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\ex1-pspicefiles\schematic1\bias_point.sim"))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (Folder "Logs")
+  (PartMRUSelector)
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" ".\ex1.DSN")
+      (Path "Design Resources" ".\ex1.DSN" "SCHEMATIC1")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Simulation Profiles"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 256 0 627"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 828 24 645")
+        (Scroll "240 293")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path "C:\USERS\BAHUY\ONEDRIVE\DESKTOP\LAB_DIEN\EX1\EX1.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "R=220"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 828 24 645")
+        (Scroll "291 366")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path "C:\USERS\BAHUY\ONEDRIVE\DESKTOP\LAB_DIEN\EX1\EX1.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "R=1.5k"))))

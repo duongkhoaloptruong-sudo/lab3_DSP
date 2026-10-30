@@ -1,0 +1,49 @@
+* source DIODE
+V_V1         N00308 0 5Vdc
+R_R1         N00308 N00312  220 TC=0,0 
+D_D1         N00312 0 Dbreak 
+D_D2         N00651 N00660 Dbreak 
+D_D3         N00660 N00664 Dbreak 
+D_D4         N00664 N00668 Dbreak 
+R_R2         0 N00668  1k TC=0,0 
+V_V2         N00651 0 10Vdc
+R_R3         N00985 N00989  2k TC=0,0 
+R_R4         N00989 0  8k TC=0,0 
+R_R5         N00985 N00968  4k TC=0,0 
+R_R6         N00968 0  6k TC=0,0 
+D_D5         N00989 N00968 Dbreak 
+V_V3         N00985 0 10vdc
+R_R7         N01357 N01348  3.3k TC=0,0 
+D_D6         N01339 N01348 Dbreak 
+D_D7         N01348 N01357 Dbreak 
+V_V4         N01339 0 20Vdc
+R_R8         0 N01357  5.6k TC=0,0 
+R_R9         0 N01686  1k TC=0,0 
+D_D8         N01679 N01686 Dbreak 
+D_D9         N01672 N01686 Dbreak 
+V_V5         N01679 0 5vdc
+V_V6         N01672 0 0
+R_R10         0 N01971  1k TC=0,0 
+D_D10         N01957 N01971 Dbreak 
+V_V8         N01957 0  AC 0
++SIN 0 22 50 0 0 0
+D_D13         N04912 0 Dbreak 
+D_D11         0 N04734 Dbreak 
+R_R11         N04912 N04734  1k TC=0,0 
+D_D12         N04802 N04734 Dbreak 
+X1_TX1         N04806 0  N04802 0 ST_Model
+D_D14         N04912 N04802 Dbreak 
+V_V9         N04806 0  AC 1
++SIN 0 220 50 0 0 0
+R_R12         0 N05246  1.5k TC=0,0 
+R_R13         N05239 N05246  200 TC=0,0 
+X_D15         0 N05246 Zener_parameterized PARAMS: VZT=5 RSF=100m
+V_V10         N05239 0 12Vdc
+X1_TX2         N05642 0  N05660 N05668 ST_Model
+D_D16         0 N05660 Dbreak 
+D_D17         N05660 N05676 Dbreak 
+D_D18         0 N05668 Dbreak 
+D_D19         N05668 N05676 Dbreak 
+R_R14         0 N05676  1k TC=0,0 
+V_V11         N05642 0  AC 1
++SIN 0 220 50 0 0 0

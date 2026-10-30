@@ -1,0 +1,10 @@
+* source EX9
+D_D2         N08533 N08647 Dbreak 
+R_R1         0 N08647  1k TC=0,0 
+D_D4         N08885 N08647 Dbreak 
+V_V1         N08545 0  AC 1
++SIN 0 220 50 0 0 0
+C_C1         0 N08647  10uf  TC=0,0 
+D_D1         0 N08533 Dbreak 
+X1_TX1         N08545 0  N08533 N08885 ST_Model
+D_D3         0 N08885 Dbreak 

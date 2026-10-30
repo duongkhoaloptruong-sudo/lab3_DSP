@@ -1,0 +1,99 @@
+
+**** 10/27/26 15:19:04 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-waveform"  [ c:\cds_spb_home\cdssetup\projects\ex9\ex9-PSpiceFiles\SCHEMATIC1\waveform.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "waveform.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../ex9-PSpiceFiles/PSpiceModelApps/PSpiceModelApps_Include.lib" 
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100ms 0 0.1ms 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source EX9
+V_V1         N07519 0  AC 1
++SIN 0 220 50 0 0 0
+X1_TX1         N07519 0  N07533 N07556 ST_Model
+D_D1         0 N07533 Dbreak 
+D_D2         N07533 N07560 Dbreak 
+D_D3         0 N07556 Dbreak 
+D_D4         N07556 N07560 Dbreak 
+R_R1         0 N07560  1k TC=0,0 
+C_C1         0 N07560  680uf  TC=0,0 
+X_D5         0 N07560 Zener_parameterized PARAMS: VZT=20 RSF=100m
+
+**** RESUMING waveform.cir ****
+.END
+
+**** 10/27/26 15:19:04 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-waveform"  [ c:\cds_spb_home\cdssetup\projects\ex9\ex9-PSpiceFiles\SCHEMATIC1\waveform.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N07519)    0.0000 (N07533) 53.44E-12 (N07556) 53.44E-12 (N07560) 19.38E-09     
+
+(X_D5.1)  -19.5050 (X_D5.3)   19.5050 (X_D5.9)-53.75E-15 (X1_TX1.PI)    0.0000  
+
+(X1_TX1.SI) 53.44E-12                 (X1_TX1.SI1) 53.44E-12                
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/27/26 15:19:04 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-waveform"  [ c:\cds_spb_home\cdssetup\projects\ex9\ex9-PSpiceFiles\SCHEMATIC1\waveform.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .91
+

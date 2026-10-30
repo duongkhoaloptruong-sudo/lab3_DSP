@@ -1,0 +1,88 @@
+
+**** 10/27/26 13:47:32 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias_point"  [ c:\cds_spb_home\cdssetup\projects\EX2\EX2-PSpiceFiles\SCHEMATIC1\bias_point.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias_point.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source EX2
+D_D3         N00891 N00897 Dbreak 
+D_D2         N00881 N00891 Dbreak 
+V_V2         N00881 0 10Vdc
+R_R2         0 N00903  1k TC=0,0 
+D_D4         N00897 N00903 Dbreak 
+
+**** RESUMING bias_point.cir ****
+.END
+
+**** 10/27/26 13:47:32 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias_point"  [ c:\cds_spb_home\cdssetup\projects\EX2\EX2-PSpiceFiles\SCHEMATIC1\bias_point.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00881)   10.0000 (N00891)    9.2907 (N00897)    8.5815 (N00903)    7.8722 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -7.872E-03
+
+    TOTAL POWER DISSIPATION   7.87E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/27/26 13:47:32 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias_point"  [ c:\cds_spb_home\cdssetup\projects\EX2\EX2-PSpiceFiles\SCHEMATIC1\bias_point.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        3.88
+

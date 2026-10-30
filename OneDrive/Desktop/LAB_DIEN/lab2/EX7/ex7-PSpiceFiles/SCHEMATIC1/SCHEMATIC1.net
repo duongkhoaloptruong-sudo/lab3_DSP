@@ -1,0 +1,9 @@
+* source EX7
+V_V9         N05342 0  AC 1
++SIN 0 220 50 0 0 0
+D_D14         N05448 N05338 Dbreak 
+X1_TX1         N05342 0  N05338 0 ST_Model
+R_R11         N05448 N05268  1k TC=0,0 
+D_D11         0 N05268 Dbreak 
+D_D12         N05338 N05268 Dbreak 
+D_D13         N05448 0 Dbreak 

@@ -1,0 +1,92 @@
+
+**** 10/28/26 14:13:12 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-biaspoint"  [ c:\cds_spb_home\cdssetup\projects\ex6_lab1\ex6_lab1-PSpiceFiles\SCHEMATIC1\biaspoint.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "biaspoint.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source EX6_LAB1
+V_V1         N00174 0 100V
+R_R1         N00174 N00844  13 TC=0,0 
+R_R2         N00953 N00917  3.704 TC=0,0 
+R_R3         N00917 N00844  4.444 TC=0,0 
+R_R4         N00949 N00917  8.889 TC=0,0 
+R_R5         0 N00949  30 TC=0,0 
+R_R6         0 N00953  50 TC=0,0 
+
+**** RESUMING biaspoint.cir ****
+.END
+
+**** 10/28/26 14:13:12 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-biaspoint"  [ c:\cds_spb_home\cdssetup\projects\ex6_lab1\ex6_lab1-PSpiceFiles\SCHEMATIC1\biaspoint.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00174)  100.0000 (N00844)   67.5000 (N00917)   56.3900 (N00949)   43.5000     
+
+(N00953)   52.5000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.500E+00
+
+    TOTAL POWER DISSIPATION   2.50E+02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/28/26 14:13:12 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-biaspoint"  [ c:\cds_spb_home\cdssetup\projects\ex6_lab1\ex6_lab1-PSpiceFiles\SCHEMATIC1\biaspoint.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .72
+

@@ -1,0 +1,58 @@
+
+**** 10/27/26 14:33:03 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-simu"  [ d:\pspice\chapter1_university\ex9\ex9-PSpiceFiles\SCHEMATIC1\simu.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "simu.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source EX9
+R_R1         N00168 N00175  12 TC=0,0 
+V_V1         N00168 N00156 10Vdc
+V_V2         N00265 N00156 4Vdc
+R_R2         N00175 N00188  3.56 TC=0,0 
+X_H1    N00175 N00265 N00188 N00156 SCHEMATIC1_H1 
+
+.subckt SCHEMATIC1_H1 1 2 3 4  
+H_H1         3 4 VH_H1 3
+VH_H1         1 2 0V
+.ends SCHEMATIC1_H1
+
+**** RESUMING simu.cir ****
+.END
+
+ERROR(ORPSIM-15142): Node N00168 is floating
+
+ERROR(ORPSIM-15142): Node N00175 is floating
+
+ERROR(ORPSIM-15142): Node N00156 is floating
+
+ERROR(ORPSIM-15142): Node N00265 is floating
+
+ERROR(ORPSIM-15142): Node N00188 is floating
+

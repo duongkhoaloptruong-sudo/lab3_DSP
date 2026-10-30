@@ -1,0 +1,20 @@
+** Profile: "SCHEMATIC1-Bias_Analysis2"  [ c:\users\bahuy\appdata\local\temp\zalo temp\b3d02ce4e85c6105f725e8e08af6730f~\ex10\ex10-pspicefiles\schematic1\bias_analysis2.sim ] 
+
+** Creating circuit file "Bias_Analysis2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

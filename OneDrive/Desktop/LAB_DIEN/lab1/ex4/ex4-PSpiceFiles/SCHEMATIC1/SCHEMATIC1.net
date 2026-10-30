@@ -1,0 +1,6 @@
+* source EX4
+R_R1         N00186 N00145  9k TC=0,0 
+V_V1         N00186 0 12Vdc
+R_R2         0 N00145  6k TC=0,0 
+R_R3         N00145 N00159  3k TC=0,0 
+R_R4         0 N00159  3k TC=0,0 

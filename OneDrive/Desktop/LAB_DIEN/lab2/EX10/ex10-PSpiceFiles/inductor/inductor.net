@@ -1,0 +1,13 @@
+* source EX10
+X_U1         N07429 N07511 N074471 0 0 LM2596_5P0_TRANS
+V_V9         N07371 0  AC 1
++SIN 0 220 50 0 0 0
+D_D11         0 N07317 Dbreak 
+C_C2         0 N07511  10uF  TC=0,0 
+R_R1         0 N07511  1k TC=0,0 
+C_C1         0 N07429  680uF  TC=0,0 
+L_L1         N074471 N07511  33uH  
+D_D13         0 0 Dbreak 
+D_D12         N07317 N07429 Dbreak 
+X1_TX1         N07371 0  N07317 0 ST_Model
+D_D14         0 N07429 Dbreak 

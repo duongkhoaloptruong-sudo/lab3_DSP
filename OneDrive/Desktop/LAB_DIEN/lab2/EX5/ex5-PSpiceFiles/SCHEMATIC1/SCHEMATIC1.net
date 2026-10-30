@@ -1,0 +1,6 @@
+* source EX5
+V_V6         N01969 0 9vdc
+V_V5         N01873 0 5vdc
+D_D8         N01873 N01883 Dbreak 
+D_D9         N01969 N01883 Dbreak 
+R_R9         0 N01883  1k TC=0,0 

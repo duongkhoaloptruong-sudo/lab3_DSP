@@ -1,0 +1,89 @@
+
+**** 10/29/26 11:23:15 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ex1"  [ c:\users\bahuy\appdata\local\temp\zalo temp\326c09d3426f130dacae30cbc0fb649e~\ex1\ex1-pspicefiles\sc
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "ex1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source EX1
+R_R1         0 N00297  6 TC=0,0 
+E_E1         N00362 N00397 0 N00297 2
+V_V1         N00369 0 12Vdc
+R_R2         N00369 N00362  4 TC=0,0 
+V_V2         N00297 N00397 4Vdc
+
+**** RESUMING ex1.cir ****
+.END
+
+**** 10/29/26 11:23:15 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ex1"  [ c:\users\bahuy\appdata\local\temp\zalo temp\326c09d3426f130dacae30cbc0fb649e~\ex1\ex1-pspicefiles\sc
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00297)  -48.0000 (N00362)   44.0000 (N00369)   12.0000 (N00397)  -52.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         8.000E+00
+    V_V2         8.000E+00
+
+    TOTAL POWER DISSIPATION  -1.28E+02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/29/26 11:23:15 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ex1"  [ c:\users\bahuy\appdata\local\temp\zalo temp\326c09d3426f130dacae30cbc0fb649e~\ex1\ex1-pspicefiles\sc
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .74
+

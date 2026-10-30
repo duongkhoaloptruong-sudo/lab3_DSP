@@ -1,0 +1,7 @@
+.ALIASES
+R_R7            R7(1=N01899 2=N01821 ) CN @EX4.SCHEMATIC2(sch_1):INS1877@ANALOG.R.Normal(chips)
+V_V4            V4(+=N01809 -=0 ) CN @EX4.SCHEMATIC2(sch_1):INS1837@SOURCE.VDC.Normal(chips)
+D_D6            D6(1=N01809 2=N01821 ) CN @EX4.SCHEMATIC2(sch_1):INS1787@BREAKOUT.Dbreak.Normal(chips)
+D_D7            D7(1=N01821 2=N01899 ) CN @EX4.SCHEMATIC2(sch_1):INS1857@BREAKOUT.Dbreak.Normal(chips)
+R_R8            R8(1=0 2=N01899 ) CN @EX4.SCHEMATIC2(sch_1):INS1909@ANALOG.R.Normal(chips)
+.ENDALIASES

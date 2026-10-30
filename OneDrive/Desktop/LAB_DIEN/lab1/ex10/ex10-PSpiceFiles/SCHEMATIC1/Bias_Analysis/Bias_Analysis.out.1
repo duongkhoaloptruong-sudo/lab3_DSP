@@ -1,0 +1,54 @@
+
+**** 10/27/26 14:22:31 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Bias_Analysis"  [ C:\MACHDIEN\ex10\ex10-pspicefiles\schematic1\bias_analysis.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Bias_Analysis.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source EX10
+V_V1         N18115 GND 100Vdc
+R_R1         N18115 N18124  16 TC=0,0 
+R_R2         N18124 GND  35 TC=0,0 
+R_R3         N18124 N18151  37.5 TC=0,0 
+R_R4         N18151 GND  20 TC=0,0 
+R_R5         N18124 GND  45 TC=0,0 
+R_R6         N18151 GND  30 TC=0,0 
+R_R7         N18124 N18151  30 TC=0,0 
+
+**** RESUMING Bias_Analysis.cir ****
+.END
+
+ERROR(ORPSIM-15142): Node N18115 is floating
+
+ERROR(ORPSIM-15142): Node GND is floating
+
+ERROR(ORPSIM-15142): Node N18124 is floating
+
+ERROR(ORPSIM-15142): Node N18151 is floating
+

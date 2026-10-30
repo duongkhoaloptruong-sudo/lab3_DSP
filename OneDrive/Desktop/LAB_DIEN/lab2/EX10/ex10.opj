@@ -1,0 +1,119 @@
+(ExpressProject "ex10"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "23.1-2024 S001-[10/29/26]")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    ("Allegro Netlist Directory" "allegro")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (NoModify)
+    (File ".\ex10.DSN"
+      (Type "Schematic Design")
+      (DisplayName ".\ex10.DSN"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (RootChangedForceReNetlist "x"))
+  (Folder "Layout")
+  (Folder "Outputs"
+    (File ".\ex10-PSpiceFiles\R+C\R+C.net"
+      (Type "Report")
+      (DisplayName ".\ex10-PSpiceFiles\R+C\R+C.net"))
+    (File ".\ex10-PSpiceFiles\inductor\inductor.net"
+      (Type "Report")
+      (DisplayName ".\ex10-PSpiceFiles\inductor\inductor.net"))
+    (File ".\ex10-PSpiceFiles\zener\zener.net"
+      (Type "Report")
+      (DisplayName ".\ex10-PSpiceFiles\zener\zener.net")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\ex10-pspicefiles\r+c\waveform.sim"
+        (DisplayName "R+C-waveform")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\ex10-pspicefiles\inductor\waveform.sim"
+        (DisplayName "inductor-waveform")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\ex10-pspicefiles\zener\waveform.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\ex10-pspicefiles\zener\waveform.sim"
+        (DisplayName "zener-waveform")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\ex10-PSpiceFiles\PSpiceModelApps\PSpiceModelApps_Include.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName
+           ".\ex10-PSpiceFiles\PSpiceModelApps\PSpiceModelApps_Include.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (Folder "Logs")
+  (PartMRUSelector
+    (ST
+      (FullPartName "ST.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\TCLSCRIPTS\CAPPSPICEMODELAPP\TRANSFORMER\HYBRID\SUPPORTFILES\TRANSFORMER.OLB")
+      (DeviceIndex "0"))
+    (LM2596_5P0_TRANS
+      (FullPartName "LM2596_5P0_TRANS.Normal")
+      (LibraryName "C:\CDS_SPB_HOME\CDSSETUP\PSPTILIBDIR\LM2596_5P0_TRANS.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "c:\users\bahuy\onedrive\desktop\lab_dien\lab2\ex10\ex10.DSN")
+      (Path "Design Resources"
+         "c:\users\bahuy\onedrive\desktop\lab_dien\lab2\ex10\ex10.DSN" "zener")
+      (Path "Design Resources"
+         "c:\users\bahuy\onedrive\desktop\lab_dien\lab2\ex10\ex10.DSN"
+         "inductor")
+      (Path "Design Resources"
+         "c:\users\bahuy\onedrive\desktop\lab_dien\lab2\ex10\ex10.DSN" "R+C")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Model Libraries")
+      (Path "PSpice Resources" "Simulation Profiles")
+      (Select "Design Resources"
+         "c:\users\bahuy\onedrive\desktop\lab_dien\lab2\ex10\ex10.DSN" "R+C"
+         "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 747"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1268 24 765")
+        (Scroll "-130 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "C:\USERS\BAHUY\ONEDRIVE\DESKTOP\LAB_DIEN\LAB2\EX10\EX10.DSN")
+      (Schematic "zener")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1268 24 765")
+        (Scroll "-130 0")
+        (Zoom "100"))
+      (Path "C:\USERS\BAHUY\ONEDRIVE\DESKTOP\LAB_DIEN\LAB2\EX10\EX10.DSN")
+      (Schematic "inductor")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1268 24 765")
+        (Scroll "-130 0")
+        (Zoom "100"))
+      (Path "C:\USERS\BAHUY\ONEDRIVE\DESKTOP\LAB_DIEN\LAB2\EX10\EX10.DSN")
+      (Schematic "R+C")
+      (Page "PAGE1")))
+  (MPSSessionName "bahuy"))

@@ -1,0 +1,14 @@
+* source DIODE
+V_V9         N05342 0  AC 1
++SIN 0 220 50 0 0 0
+D_D14         0 N05779 Dbreak 
+X1_TX1         N05342 0  N05771 0 ST_Model
+D_D11         0 N05771 Dbreak 
+D_D13         0 0 Dbreak 
+D_D12         N05771 N05779 Dbreak 
+C_C1         0 N05779  680uF  TC=0,0 
+X_U1         N05779 N06439 N061171 0 0 LM2596_5P0_TRANS
+C_C2         0 N06439  220uF  TC=0,0 
+R_R1         0 N06439  1k TC=0,0 
+L_L1         N061171 N06439  33uH  
+X_D15         0 N06439 Zener_parameterized PARAMS: VZT=5 RSF=100m

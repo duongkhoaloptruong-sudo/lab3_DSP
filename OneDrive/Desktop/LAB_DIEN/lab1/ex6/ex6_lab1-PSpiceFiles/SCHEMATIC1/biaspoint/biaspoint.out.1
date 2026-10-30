@@ -1,0 +1,55 @@
+
+**** 10/28/26 14:00:16 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-biaspoint"  [ c:\cds_spb_home\cdssetup\projects\ex6_lab1\ex6_lab1-PSpiceFiles\SCHEMATIC1\biaspoint.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "biaspoint.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source EX6_LAB1
+V_V1         N00174 N00197 100V
+R_R1         N00174 N00181  13 TC=0,0 
+R_R2         N00193 N00181  24 TC=0,0 
+R_R3         N00193 N00214  20 TC=0,0 
+R_R4         N00214 N00181  10 TC=0,0 
+R_R5         N00197 N00193  30 TC=0,0 
+R_R6         N00197 N00214  50 TC=0,0 
+
+**** RESUMING biaspoint.cir ****
+.END
+
+ERROR(ORPSIM-15142): Node N00174 is floating
+
+ERROR(ORPSIM-15142): Node N00197 is floating
+
+ERROR(ORPSIM-15142): Node N00181 is floating
+
+ERROR(ORPSIM-15142): Node N00193 is floating
+
+ERROR(ORPSIM-15142): Node N00214 is floating
+

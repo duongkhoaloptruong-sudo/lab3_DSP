@@ -1,0 +1,47 @@
+
+**** 10/27/26 16:07:14 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ex5"  [ d:\1-univerdoc\1-kì3\electricandelectronic\pscipe\ex5\ex5-PSpiceFiles\SCHEMATIC1\ex5.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "ex5.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source EX5
+R_R1         N00118 N00114  3.9k TC=0,0 
+V_V1         N00107 N00118 24Vdc
+R_R2         N00114 N00107  14.82k TC=0,0 
+
+**** RESUMING ex5.cir ****
+.END
+
+ERROR(ORPSIM-15142): Node N00118 is floating
+
+ERROR(ORPSIM-15142): Node N00114 is floating
+
+ERROR(ORPSIM-15142): Node N00107 is floating
+

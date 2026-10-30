@@ -1,0 +1,5 @@
+* source EX6
+V_V8         N02097 0  AC 0
++SIN 0 22 50 0 0 0
+R_R10         0 N02107  1k TC=0,0 
+D_D10         N02097 N02107 Dbreak 

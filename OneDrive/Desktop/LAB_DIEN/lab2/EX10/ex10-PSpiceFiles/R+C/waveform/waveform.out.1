@@ -1,0 +1,454 @@
+
+**** 10/27/26 15:59:42 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "R+C-waveform"  [ c:\cds_spb_home\cdssetup\projects\ex10\ex10-PSpiceFiles\R+C\waveform.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "waveform.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../ex10-PSpiceFiles/PSpiceModelApps/PSpiceModelApps_Include.lib" 
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 1ms 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.OPTIONS ABSTOL= 0.001
+.OPTIONS CHGTOL= 0.001
+.OPTIONS GMIN= 1.0E-9
+.OPTIONS VNTOL= 0.001
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\R+C.net" 
+
+
+
+**** INCLUDING R+C.net ****
+* source EX10
+D_D13         0 0 Dbreak 
+R_R1         0 N07511  1k TC=0,0 
+D_D12         N07317 N07429 Dbreak 
+X1_TX1         N07371 0  N07317 0 ST_Model
+C_C2         0 N07511  10uF  TC=0,0 
+X_U1         N07429 N07511 N07511 0 0 LM2596_5P0_TRANS
+C_C1         0 N07429  680uF  TC=0,0 
+V_V9         N07371 0  AC 1
++SIN 0 220 50 0 0 0
+D_D14         0 N07429 Dbreak 
+D_D11         0 N07317 Dbreak 
+
+**** RESUMING waveform.cir ****
+.END
+
+**** 10/27/26 15:59:42 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "R+C-waveform"  [ c:\cds_spb_home\cdssetup\projects\ex10\ex10-PSpiceFiles\R+C\waveform.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.X_U2_U20.dd1 
+          IS    1.000000E-15 
+           N     .1          
+          RS     .05         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U2_U21.dd1 
+          IS    1.000000E-15 
+           N     .1          
+          RS     .05         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U2_U22.dd1 
+          IS    1.000000E-15 
+           N     .1          
+          RS     .05         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U20.dd1 
+          IS    1.000000E-15 
+           N     .1          
+          RS     .05         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U17.dd1 
+          IS    1.000000E-15 
+           N     .1          
+          RS     .05         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U18.dd1 
+          IS    1.000000E-15 
+           N     .1          
+          RS     .05         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U19.dd1 
+          IS    1.000000E-15 
+           N     .1          
+          RS     .05         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U21.d_d1 
+          IS    1.000000E-15 
+           N     .1          
+          RS     .05         
+          TT   10.000000E-12 
+
+
+**** 10/27/26 15:59:42 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "R+C-waveform"  [ c:\cds_spb_home\cdssetup\projects\ex10\ex10-PSpiceFiles\R+C\waveform.sim ] 
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.X_U2_S1._U2_S1 
+         RON    1.000000E-06 
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+               X_U1.X_U1_S1._U1_S1 
+         RON     .125        
+        ROFF    1.000000E+06 
+         VON     .8          
+        VOFF     .2          
+
+
+               X_U1.X_U1_S4._U1_S4 
+         RON   10.000000E-06 
+        ROFF    1.000000E+06 
+         VON     .8          
+        VOFF     .2          
+
+
+               X_U1.X_U1_S3._U1_S3 
+         RON    1.000000E-03 
+        ROFF   10.000000E+06 
+         VON     .2          
+        VOFF     .8          
+
+
+**** 10/27/26 15:59:42 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "R+C-waveform"  [ c:\cds_spb_home\cdssetup\projects\ex10\ex10-PSpiceFiles\R+C\waveform.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N07317)-2.108E-24 (N07371)    0.0000 (N07429)-19.13E-27 (N07511)-17.39E-30     
+
+(X1_TX1.PI)    0.0000                 (X1_TX1.SI)    0.0000                     
+
+(X1_TX1.SI1)    0.0000                (X_U1.U1_QB)    1.0000                    
+
+(X_U1.FB_INT)-4.292E-30               (X_U1.U1_CLK)-3.248E-15                   
+
+(X_U1.U1_VIN)-19.13E-27               (X_U1.U1_RAMP)     .0020                  
+
+(X_U1.U1_VREF)    0.0000              (X_U1.U1_VREG)-125.5E-27                  
+
+(X_U1.U1_IN_EN)    1.0000             (X_U1.N16780142)    0.0000                
+
+(X_U1.N16780145)    0.0000            (X_U1.N16780152)    0.0000                
+
+(X_U1.N16780168)-19.13E-27            (X_U1.U1_N16912605)-4.292E-30             
+
+(X_U1.U1_N16912628)    1.2500         (X_U1.U1_N16912717)    0.0000             
+
+(X_U1.U1_N16912781)    0.0000         (X_U1.U1_N16912860)    0.0000             
+
+(X_U1.U1_N16912864)    0.0000         (X_U1.U1_N16912941)    2.4000             
+
+(X_U1.U1_N16913023)     .6000         (X_U1.U1_N16913047)    0.0000             
+
+(X_U1.U1_N16913100)    1.0000         (X_U1.U1_N16913159)    0.0000             
+
+(X_U1.U1_N16913162)-19.13E-27         (X_U1.U1_N16913254)     .7500             
+
+(X_U1.U2_N16797288)-19.13E-27         (X_U1.U2_N16797354)-53.25E-15             
+
+(X_U1.U2_N16797356)    0.0000         (X_U1.U2_N16797358)-19.13E-27             
+
+(X_U1.U2_N16797432)    -.2200         (X_U1.U2_N16797445)    -.2000             
+
+(X_U1.U2_N16797477)    0.0000         (X_U1.U2_N16797480)    0.0000             
+
+(X_U1.U2_N16797484)-53.25E-15         (X_U1.U2_N16797488)    0.0000             
+
+(X_U1.U2_N16797592)     .0020         (X_U1.U2_N16797620)    0.0000             
+
+(X_U1.U2_N16797700)    2.0000         (X_U1.X_U1_U21.my5)    1.0000             
+
+(X_U1.X_U1_U21.qbr)    1.0000         (X_U1.X_U1_U21.qqq)    -.0100             
+
+(X_U1.X_U1_U8.Yint)    1.0000         (X_U1.X_U2_U8.Yint)    0.0000             
+
+(X_U1.X_U2_U9.Yint)    0.0000         (X_U1.U1_N169126890) 640.0E-21            
+
+(X_U1.U1_N169128072)    0.0000        (X_U1.U1_N169131443)    1.0000            
+
+(X_U1.U2_N167976151)    0.0000        (X_U1.X_U1_U12.Yint)    1.0000            
+
+(X_U1.X_U1_U15.YINT)    1.0000        (X_U1.X_U1_U16.Yint)    0.0000            
+
+(X_U1.X_U1_U21.qint)    -.0100        (X_U1.X_U1_U21.myvss)    0.0000           
+
+(X_U1.X_U1_U21.qqqd1)    0.0000       (X_U1.U1_ERROR_AMP_OUT) 4.800E-12         
+
+(X_U1.X_U1_U21.x3.YINT)    0.0000     
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V9         0.000E+00
+    X_U1.V_U2_V3  -1.998E-09
+    X_U1.V_U2_V2   0.000E+00
+    X_U1.V_U2_V1   0.000E+00
+    X_U1.V_U1_VCL   3.494E-17
+    X_U1.V_U1_VCH  -2.400E-09
+    X_U1.V_U1_V_EN4   0.000E+00
+    X_U1.V_U1_V1  -7.480E-07
+    X_U1.V_U1_V3   0.000E+00
+    X_U1.X_U1_U21.v1  -1.010E-09
+    X_U1.X_U1_U21.v2  -1.005E-11
+
+    TOTAL POWER DISSIPATION   5.72E-07  WATTS
+
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+
+ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  9.481E-03.
+         Time step =  975.8E-21, minimum allowable step size =  1.000E-18
+
+  These voltages failed to converge:
+
+    V(X1_TX1.SI1)             =    -3.755V  \   244.70mV
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N07317)    2.2447 (N07371)   35.7440 (N07429)   20.5030 (N07511)    4.9822     
+
+(X1_TX1.PI)   22.4420                 (X1_TX1.SI)    2.2447                     
+
+(X1_TX1.SI1)   -3.7553                (X_U1.U1_QB)    1.0000                    
+
+(X_U1.FB_INT)    1.2296               (X_U1.U1_CLK) 78.47E-09                   
+
+(X_U1.U1_VIN)   20.5030               (X_U1.U1_RAMP)    1.2506                  
+
+(X_U1.U1_VREF)    1.2350              (X_U1.U1_VREG)    2.4443                  
+
+(X_U1.U1_IN_EN)    1.0000             (X_U1.N16780142)    0.0000                
+
+(X_U1.N16780145)    0.0000            (X_U1.N16780152)    1.0000                
+
+(X_U1.N16780168)   20.5030            (X_U1.U1_N16912605)    1.2296             
+
+(X_U1.U1_N16912628)    1.2500         (X_U1.U1_N16912717)    0.0000             
+
+(X_U1.U1_N16912781)    9.6111         (X_U1.U1_N16912860)     .7320             
+
+(X_U1.U1_N16912864)    0.0000         (X_U1.U1_N16912941)    2.4000             
+
+(X_U1.U1_N16913023)     .6000         (X_U1.U1_N16913047)    0.0000             
+
+(X_U1.U1_N16913100)    1.0000         (X_U1.U1_N16913159)    0.0000             
+
+(X_U1.U1_N16913162)    2.5000         (X_U1.U1_N16913254)     .7500             
+
+(X_U1.U2_N16797288)   20.5030         (X_U1.U2_N16797354) 18.66E-15             
+
+(X_U1.U2_N16797356)-159.8E-18         (X_U1.U2_N16797358)   20.5030             
+
+(X_U1.U2_N16797432)   20.2830         (X_U1.U2_N16797445)   20.3030             
+
+(X_U1.U2_N16797477)    0.0000         (X_U1.U2_N16797480)-3.836E-21             
+
+(X_U1.U2_N16797484) 18.66E-15         (X_U1.U2_N16797488)-159.8E-18             
+
+(X_U1.U2_N16797592)    1.6802         (X_U1.U2_N16797620)     .8587             
+
+(X_U1.U2_N16797700)    2.0000         (X_U1.X_U1_U21.my5)    1.0000             
+
+(X_U1.X_U1_U21.qbr)    1.0000         (X_U1.X_U1_U21.qqq)    -.3435             
+
+(X_U1.X_U1_U8.Yint)    1.0000         (X_U1.X_U2_U8.Yint)    0.0000             
+
+(X_U1.X_U2_U9.Yint)    0.0000         (X_U1.U1_N169126890)     .7325            
+
+(X_U1.U1_N169128072)    1.0023        (X_U1.U1_N169131443)    1.0000            
+
+(X_U1.U2_N167976151)    1.0000        (X_U1.X_U1_U12.Yint)    1.0000            
+
+(X_U1.X_U1_U15.YINT)    1.0000        (X_U1.X_U1_U16.Yint)    1.0000            
+
+(X_U1.X_U1_U21.qint)    -.3435        (X_U1.X_U1_U21.myvss)    0.0000           
+
+(X_U1.X_U1_U21.qqqd1)    0.0000       (X_U1.U1_ERROR_AMP_OUT)     .7460         
+
+(X_U1.X_U1_U21.x3.YINT)    0.0000     
+
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 0.001
+**** Param: VNTOL = 0.001
+**** Param: GMIN = 1e-09
+**** Param: TSTOP = 0.01
+**** Param: TMAX = 0.001
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-10
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 3
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  9.481E-03.
+         Time step =  975.8E-21, minimum allowable step size =  1.000E-18
+
+  These voltages failed to converge:
+
+    V(X1_TX1.SI1)             =    -3.755V  \   244.70mV
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N07317)    2.2447 (N07371)   35.7440 (N07429)   20.5030 (N07511)    4.9822     
+
+(X1_TX1.PI)   22.4420                 (X1_TX1.SI)    2.2447                     
+
+(X1_TX1.SI1)   -3.7553                (X_U1.U1_QB)    1.0000                    
+
+(X_U1.FB_INT)    1.2296               (X_U1.U1_CLK) 78.47E-09                   
+
+(X_U1.U1_VIN)   20.5030               (X_U1.U1_RAMP)    1.2506                  
+
+(X_U1.U1_VREF)    1.2350              (X_U1.U1_VREG)    2.4443                  
+
+(X_U1.U1_IN_EN)    1.0000             (X_U1.N16780142)    0.0000                
+
+(X_U1.N16780145)    0.0000            (X_U1.N16780152)    1.0000                
+
+(X_U1.N16780168)   20.5030            (X_U1.U1_N16912605)    1.2296             
+
+(X_U1.U1_N16912628)    1.2500         (X_U1.U1_N16912717)    0.0000             
+
+(X_U1.U1_N16912781)    9.6111         (X_U1.U1_N16912860)     .7320             
+
+(X_U1.U1_N16912864)    0.0000         (X_U1.U1_N16912941)    2.4000             
+
+(X_U1.U1_N16913023)     .6000         (X_U1.U1_N16913047)    0.0000             
+
+(X_U1.U1_N16913100)    1.0000         (X_U1.U1_N16913159)    0.0000             
+
+(X_U1.U1_N16913162)    2.5000         (X_U1.U1_N16913254)     .7500             
+
+(X_U1.U2_N16797288)   20.5030         (X_U1.U2_N16797354) 18.66E-15             
+
+(X_U1.U2_N16797356)-159.8E-18         (X_U1.U2_N16797358)   20.5030             
+
+(X_U1.U2_N16797432)   20.2830         (X_U1.U2_N16797445)   20.3030             
+
+(X_U1.U2_N16797477)    0.0000         (X_U1.U2_N16797480)-3.836E-21             
+
+(X_U1.U2_N16797484) 18.66E-15         (X_U1.U2_N16797488)-159.8E-18             
+
+(X_U1.U2_N16797592)    1.6802         (X_U1.U2_N16797620)     .8587             
+
+(X_U1.U2_N16797700)    2.0000         (X_U1.X_U1_U21.my5)    1.0000             
+
+(X_U1.X_U1_U21.qbr)    1.0000         (X_U1.X_U1_U21.qqq)    -.3435             
+
+(X_U1.X_U1_U8.Yint)    1.0000         (X_U1.X_U2_U8.Yint)    0.0000             
+
+(X_U1.X_U2_U9.Yint)    0.0000         (X_U1.U1_N169126890)     .7325            
+
+(X_U1.U1_N169128072)    1.0023        (X_U1.U1_N169131443)    1.0000            
+
+(X_U1.U2_N167976151)    1.0000        (X_U1.X_U1_U12.Yint)    1.0000            
+
+(X_U1.X_U1_U15.YINT)    1.0000        (X_U1.X_U1_U16.Yint)    1.0000            
+
+(X_U1.X_U1_U21.qint)    -.3435        (X_U1.X_U1_U21.myvss)    0.0000           
+
+(X_U1.X_U1_U21.qqqd1)    0.0000       (X_U1.U1_ERROR_AMP_OUT)     .7460         
+
+(X_U1.X_U1_U21.x3.YINT)    0.0000     
+
+
+**** Interrupt ****

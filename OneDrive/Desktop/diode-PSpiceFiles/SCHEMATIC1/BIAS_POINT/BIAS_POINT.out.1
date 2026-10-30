@@ -1,0 +1,43 @@
+
+**** 09/23/26 20:45:53 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-BIAS_POINT"  [ c:\cds_spb_home\cdssetup\projects\DIODE\DIODE-PSpiceFiles\SCHEMATIC1\BIAS_POINT.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "BIAS_POINT.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source DIODE
+V_V1         N00308 0 5Vdc
+R_R1         N00308 N00312  1,5k TC=0,0 
+------------------------------$
+ERROR(ORPSIM-16015): Unknown parameter.
+D_D1         N00312 0 Dbreak 
+
+**** RESUMING BIAS_POINT.cir ****
+.END
+

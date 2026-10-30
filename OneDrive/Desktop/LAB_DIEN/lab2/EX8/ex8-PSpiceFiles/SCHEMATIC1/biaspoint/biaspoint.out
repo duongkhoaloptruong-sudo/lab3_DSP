@@ -1,0 +1,98 @@
+
+**** 10/27/26 14:20:32 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-biaspoint"  [ c:\cds_spb_home\cdssetup\projects\ex8\ex8-PSpiceFiles\SCHEMATIC1\biaspoint.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "biaspoint.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source EX8
+R_R12         0 N05412  1.5k TC=0,0 
+X_D15         0 N05412 Zener_parameterized PARAMS: VZT=5 RSF=100m
+V_V10         N05402 0 12Vdc
+R_R13         N05402 N05412  200 TC=0,0 
+V_V11         N05707 0 8Vdc
+X_D16         0 N05717 Zener_parameterized PARAMS: VZT=5 RSF=100m
+R_R15         0 N05717  1.5k TC=0,0 
+R_R14         N05707 N05717  200 TC=0,0 
+
+**** RESUMING biaspoint.cir ****
+.END
+
+**** 10/27/26 14:20:32 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-biaspoint"  [ c:\cds_spb_home\cdssetup\projects\ex8\ex8-PSpiceFiles\SCHEMATIC1\biaspoint.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N05402)   12.0000 (N05412)    5.0086 (N05707)    8.0000 (N05717)    4.9931     
+
+(X_D15.1)     .5039                   (X_D15.3)    4.5047                       
+
+(X_D15.9) 86.76E-06                   (X_D16.1)     .4883                       
+
+(X_D16.3)    4.5047                   (X_D16.9) 31.89E-06                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V10       -3.496E-02
+    V_V11       -1.503E-02
+
+    TOTAL POWER DISSIPATION   5.40E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/27/26 14:20:32 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-biaspoint"  [ c:\cds_spb_home\cdssetup\projects\ex8\ex8-PSpiceFiles\SCHEMATIC1\biaspoint.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .74
+

@@ -1,0 +1,89 @@
+
+**** 10/27/26 13:53:07 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-biaspoint"  [ c:\cds_spb_home\cdssetup\projects\ex3\ex3-PSpiceFiles\SCHEMATIC1\biaspoint.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "biaspoint.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source EX3
+D_D5         N01249 N01311 Dbreak 
+R_R3         N01245 N01249  2k TC=0,0 
+R_R5         N01245 N01311  4k TC=0,0 
+V_V3         N01245 0 10vdc
+R_R4         N01249 0  8k TC=0,0 
+R_R6         N01311 0  6k TC=0,0 
+
+**** RESUMING biaspoint.cir ****
+.END
+
+**** 10/27/26 13:53:07 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-biaspoint"  [ c:\cds_spb_home\cdssetup\projects\ex3\ex3-PSpiceFiles\SCHEMATIC1\biaspoint.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01245)   10.0000 (N01249)    7.4510 (N01311)    6.8235 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -2.069E-03
+
+    TOTAL POWER DISSIPATION   2.07E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/27/26 13:53:07 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-biaspoint"  [ c:\cds_spb_home\cdssetup\projects\ex3\ex3-PSpiceFiles\SCHEMATIC1\biaspoint.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        3.72
+

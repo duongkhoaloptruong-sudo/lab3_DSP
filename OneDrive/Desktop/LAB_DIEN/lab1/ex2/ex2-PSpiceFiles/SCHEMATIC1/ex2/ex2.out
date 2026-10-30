@@ -1,0 +1,94 @@
+
+**** 10/29/26 11:30:07 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ex2"  [ c:\users\bahuy\onedrive\desktop\lab_dien\lab1\ex2\ex2-PSpiceFiles\SCHEMATIC1\ex2.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "ex2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source EX2
+R_R1         N00548 N00384  2 TC=0,0 
+V_V1         N00548 0 12Vdc
+R_R2         N00384 N00393  3 TC=0,0 
+R_R3         N00393 N00400  4 TC=0,0 
+R_R4         N00404 N00400  5 TC=0,0 
+R_R5         N00404 N00496  3 TC=0,0 
+R_R6         N00496 N00393  4 TC=0,0 
+R_R7         N00496 N00384  6 TC=0,0 
+R_R8         N00496 0  1 TC=0,0 
+
+**** RESUMING ex2.cir ****
+.END
+
+**** 10/29/26 11:30:07 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ex2"  [ c:\users\bahuy\onedrive\desktop\lab_dien\lab1\ex2\ex2-PSpiceFiles\SCHEMATIC1\ex2.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00384)    8.0000 (N00393)    5.0000 (N00400)    4.0000 (N00404)    2.7500     
+
+(N00496)    2.0000 (N00548)   12.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.000E+00
+
+    TOTAL POWER DISSIPATION   2.40E+01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/29/26 11:30:07 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ex2"  [ c:\users\bahuy\onedrive\desktop\lab_dien\lab1\ex2\ex2-PSpiceFiles\SCHEMATIC1\ex2.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .74
+

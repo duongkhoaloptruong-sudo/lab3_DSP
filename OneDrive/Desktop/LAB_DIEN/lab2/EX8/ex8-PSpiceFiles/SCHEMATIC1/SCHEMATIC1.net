@@ -1,0 +1,9 @@
+* source EX8
+R_R12         0 N05412  1.5k TC=0,0 
+X_D15         0 N05412 Zener_parameterized PARAMS: VZT=5 RSF=100m
+V_V10         N05402 0 12Vdc
+R_R13         N05402 N05412  200 TC=0,0 
+V_V11         N05707 0 8Vdc
+X_D16         0 N05717 Zener_parameterized PARAMS: VZT=5 RSF=100m
+R_R15         0 N05717  1.5k TC=0,0 
+R_R14         N05707 N05717  200 TC=0,0 

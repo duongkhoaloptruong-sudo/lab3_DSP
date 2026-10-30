@@ -1,0 +1,7 @@
+* source EX3
+D_D5         N01596 N01658 Dbreak 
+V_V3         N01592 0 12vdc
+R_R5         N01592 N01658  4k TC=0,0 
+R_R6         N01658 0  6k TC=0,0 
+R_R3         N01592 N01596  2k TC=0,0 
+R_R4         N01596 0  8k TC=0,0 

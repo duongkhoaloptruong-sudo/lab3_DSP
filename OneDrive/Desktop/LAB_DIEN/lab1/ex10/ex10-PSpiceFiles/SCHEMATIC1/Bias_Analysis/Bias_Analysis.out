@@ -1,0 +1,91 @@
+
+**** 10/27/26 14:23:18 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Bias_Analysis"  [ C:\MACHDIEN\ex10\ex10-pspicefiles\schematic1\bias_analysis.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Bias_Analysis.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source EX10
+V_V1         N18115 0 100Vdc
+R_R1         N18115 N18124  16 TC=0,0 
+R_R2         N18124 0  35 TC=0,0 
+R_R3         N18124 N18151  37.5 TC=0,0 
+R_R4         N18151 0  20 TC=0,0 
+R_R5         N18124 0  45 TC=0,0 
+R_R6         N18151 0  30 TC=0,0 
+R_R7         N18124 N18151  30 TC=0,0 
+
+**** RESUMING Bias_Analysis.cir ****
+.END
+
+**** 10/27/26 14:23:18 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Bias_Analysis"  [ C:\MACHDIEN\ex10\ex10-pspicefiles\schematic1\bias_analysis.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N18115)  100.0000 (N18124)   42.1790 (N18151)   17.6560 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -3.614E+00
+
+    TOTAL POWER DISSIPATION   3.61E+02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/27/26 14:23:18 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Bias_Analysis"  [ C:\MACHDIEN\ex10\ex10-pspicefiles\schematic1\bias_analysis.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .47
+

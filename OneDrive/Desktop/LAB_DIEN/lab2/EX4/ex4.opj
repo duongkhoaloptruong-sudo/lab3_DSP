@@ -1,0 +1,75 @@
+(ExpressProject "ex4"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "23.1-2024 S001-[10/29/26]")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    ("Allegro Netlist Directory" "allegro")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (NoModify)
+    (File ".\ex4.DSN"
+      (Type "Schematic Design")
+      (DisplayName ".\ex4.DSN"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (RootChangedForceReNetlist "x"))
+  (Folder "Layout")
+  (Folder "Outputs"
+    (File ".\ex4-PSpiceFiles\SCHEMATIC1\SCHEMATIC1.net"
+      (Type "Report")
+      (DisplayName ".\ex4-PSpiceFiles\SCHEMATIC1\SCHEMATIC1.net"))
+    (File ".\ex4-pspicefiles\schematic2\schematic2.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\ex4-pspicefiles\schematic1\biaspoint.sim"
+        (DisplayName "SCHEMATIC1-biaspoint")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\ex4-pspicefiles\schematic2\biaspoint.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\ex4-pspicefiles\schematic2\biaspoint.sim"
+        (DisplayName "SCHEMATIC2-biaspoint")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (Folder "Logs")
+  (PartMRUSelector)
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "c:\users\bahuy\onedrive\desktop\lab_dien\lab2\ex4\ex4.DSN")
+      (Path "Design Resources"
+         "c:\users\bahuy\onedrive\desktop\lab_dien\lab2\ex4\ex4.DSN"
+         "SCHEMATIC2")
+      (Path "Design Resources"
+         "c:\users\bahuy\onedrive\desktop\lab_dien\lab2\ex4\ex4.DSN"
+         "SCHEMATIC1")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Simulation Profiles"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 747"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1268 24 765")
+        (Scroll "-130 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "C:\USERS\BAHUY\ONEDRIVE\DESKTOP\LAB_DIEN\LAB2\EX4\EX4.DSN")
+      (Schematic "SCHEMATIC2")
+      (Page "PAGE1")))
+  (MPSSessionName "bahuy"))
